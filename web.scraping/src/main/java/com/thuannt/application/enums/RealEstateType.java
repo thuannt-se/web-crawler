@@ -1,4 +1,4 @@
-package com.thuannt.enums;
+package com.thuannt.application.enums;
 
 import lombok.Getter;
 

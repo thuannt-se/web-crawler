@@ -1,8 +1,8 @@
-package com.thuannt.model;
+package com.thuannt.application.model;
 
 import java.math.BigDecimal;
 
-import com.thuannt.enums.RealEstateType;
+import com.thuannt.application.enums.RealEstateType;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

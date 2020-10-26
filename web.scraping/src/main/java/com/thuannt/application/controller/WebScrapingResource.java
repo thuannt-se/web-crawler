@@ -1,10 +1,10 @@
-package com.thuannt.controller;
+package com.thuannt.application.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.thuannt.model.RealEstate;
+import com.thuannt.application.model.RealEstate;
 
 @RestController
 public class WebScrapingResource {
