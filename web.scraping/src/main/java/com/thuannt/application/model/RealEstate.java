@@ -3,6 +3,7 @@ package com.thuannt.application.model;
 import java.math.BigDecimal;
 
 import com.thuannt.application.enums.RealEstateType;
+import com.thuannt.application.enums.TypeAd;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -19,6 +20,7 @@ public class RealEstate {
 	private String city;
 	private String address;
 	private RealEstateType type;
-	private BigDecimal price;
+	private RealEstatePrice price;
+	private TypeAd typeAd;
 	private String acreage;
 }
