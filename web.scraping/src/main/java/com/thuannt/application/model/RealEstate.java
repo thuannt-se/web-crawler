@@ -1,7 +1,5 @@
 package com.thuannt.application.model;
 
-import java.math.BigDecimal;
-
 import com.thuannt.application.enums.RealEstateType;
 import com.thuannt.application.enums.TypeAd;
 

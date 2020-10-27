@@ -5,22 +5,24 @@ import java.util.List;
 
 import org.jsoup.nodes.Document;
 
+import com.thuannt.application.model.DetailPage;
 import com.thuannt.application.model.RealEstate;
+import com.thuannt.application.model.SubPage;
 
 public abstract class WebScraper {
 	
-	abstract Iterable<Document> inspectHomePage();
+	abstract Iterable<SubPage> inspectHomePage();
 	
-	abstract Iterable<Document> inspectSubPage(Document subpage);
+	abstract Iterable<DetailPage> inspectSubPage(SubPage subpage);
 	
-	abstract RealEstate inspectDetailPage(Document detailPage);
+	abstract RealEstate inspectDetailPage(DetailPage detailPage);
 	
 	protected Iterable<RealEstate> inspect() {
 		List<RealEstate> realEstates = new ArrayList<>();
-        Iterable<Document> subpages = inspectHomePage();
-        for (Document subpage: subpages) {
-            Iterable<Document> detailPages = inspectSubPage(subpage);
-            for (Document detailPage: detailPages) {
+        Iterable<SubPage> subpages = inspectHomePage();
+        for (SubPage subpage: subpages) {
+            Iterable<DetailPage> detailPages = inspectSubPage(subpage);
+            for (DetailPage detailPage: detailPages) {
             	RealEstate classifiedAd = inspectDetailPage(detailPage);
             	realEstates.add(classifiedAd);
             }

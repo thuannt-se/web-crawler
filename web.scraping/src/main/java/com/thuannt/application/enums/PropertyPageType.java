@@ -11,4 +11,5 @@ public enum PropertyPageType {
 	
 	@Getter
 	private String url;
+
 }

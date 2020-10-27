@@ -19,5 +19,6 @@ public class HomePage {
 	private List<SubPage> subPages;
 	private PropertyPageType pageType;
 	private LocalDate createdDate;
+	private String htmlClassNameWithTags;
 	
 }
