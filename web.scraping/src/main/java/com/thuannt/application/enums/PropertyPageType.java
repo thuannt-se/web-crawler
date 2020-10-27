@@ -1,12 +1,14 @@
-package com.thuannt.application.model;
+package com.thuannt.application.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
-@Getter
+
 @AllArgsConstructor
 public enum PropertyPageType {
+	
 	PROPERTY_GURU_VIETNAME("https://batdongsan.com.vn/");
 	
+	@Getter
 	private String url;
 }

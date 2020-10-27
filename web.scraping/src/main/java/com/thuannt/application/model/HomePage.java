@@ -3,6 +3,8 @@ package com.thuannt.application.model;
 import java.time.LocalDate;
 import java.util.List;
 
+import com.thuannt.application.enums.PropertyPageType;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
